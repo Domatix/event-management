@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_create_invoice" model="ir.ui.view">
+            <field name="name">Create invoices</field>
+            <field name="model">create.invoice</field>
+            <field name="arch" type="xml">
+                <form string="Create invoice">
+                    <group>
+                    	<field name="date"/>
+                        <field name="invoice_mode"/>
+                        <field name="quotation_amount" attrs="{'invisible': [('invoice_mode','!=','percent')]}"/>
+                        <field name="percent" attrs="{'invisible': [('invoice_mode','!=','percent')]}"/>
+                        <field name="invoice_amount"/>
+                        <field name="invoiced_amount"/>
+                    </group>
+                    <footer>
+                        <button name="create_invoice" string="Create Invoice" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+               </form>
+            </field>
+        </record>
+
+        <record id="action_invoice_create" model="ir.actions.act_window">
+            <field name="name">Create Invoice</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">create.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_create_invoice"/>
+            <field name="target">new</field>
+            <field name="multi">True</field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_analytic_quotation_item_user,analytic.quotation.item user,model_analytic_quotation_item,analytic_attendees.group_analytic_management,1,1,1,1
+access_analytic_quotation_item_concept_user,analytic.quotation.item.concept user,model_analytic_quotation_item_concept,analytic_attendees.group_analytic_management,1,1,1,1
+access_account_invoice_user,account.invoice user,account.model_account_invoice,analytic_attendees.group_analytic_management,1,0,1,0
+access_account_invoice_line_user,account.invoice.line user,account.model_account_invoice_line,analytic_attendees.group_analytic_management,1,0,1,0
+access_account_move_line_user,account.move.line user,account.model_account_move_line,analytic_attendees.group_analytic_management,1,0,1,0
+access_stock_move_user,stock.move user,stock.model_stock_move,analytic_attendees.group_analytic_management,1,1,1,0
+access_stock_inventory_user,stock.inventory user,stock.model_stock_inventory,analytic_attendees.group_analytic_management,1,1,1,0
+access_stock_inventory_line_user,stock.inventory.line user,stock.model_stock_inventory_line,analytic_attendees.group_analytic_management,1,1,1,0

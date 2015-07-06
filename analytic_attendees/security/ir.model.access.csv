@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_analytic_account_user,account.analytic.account user,analytic.model_account_analytic_account,analytic_attendees.group_analytic_management,1,1,1,1
+access_analytic_res_partner_user,analytic.res.partner user,base.model_res_partner,analytic_attendees.group_analytic_management,1,1,1,1
+access_analytic_event_type_user,analytic.event.type user,model_event_type,analytic_attendees.group_analytic_management,1,1,1,1
+access_analytic_service_type_user,analytic.service.type user,model_service_type,analytic_attendees.group_analytic_management,1,1,1,1

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="product_advance" model="product.product">
+            <field name="list_price">2000</field>
+            <field name="standard_price">2000</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="name">Advance</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">service</field>
+            <field name="sale_ok" eval="True"/>
+        </record>
+        
+        <record id="product_event" model="product.product">
+            <field name="list_price">2000</field>
+            <field name="standard_price">2000</field>
+            <field name="uom_id" ref="product.product_uom_hour"/>
+            <field name="uom_po_id" ref="product.product_uom_hour"/>
+            <field name="name">Product Event</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="type">service</field>
+            <field name="sale_ok" eval="True"/>
+        </record>
+    </data>
+</openerp>

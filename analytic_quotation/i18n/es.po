@@ -1,0 +1,342 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* analytic_quotation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-eaa0f29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-04 22:37+0000\n"
+"PO-Revision-Date: 2015-07-04 22:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: analytic_quotation
+#: model:product.template,name:analytic_quotation.product_advance_product_template
+msgid "Advance"
+msgstr "Anticipo"
+
+#. module: analytic_quotation
+#: field:create.invoice,invoice_amount:0
+msgid "Amount"
+msgstr "Importe"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,analytic_id:0
+msgid "Analytic"
+msgstr "Contrato"
+
+#. module: analytic_quotation
+#: model:ir.model,name:analytic_quotation.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Contrato"
+
+#. module: analytic_quotation
+#: view:create.invoice:analytic_quotation.view_create_invoice
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: analytic_quotation
+#: selection:analytic.quotation.item,type:0
+msgid "Composed"
+msgstr "Compuesto"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,composed_price:0
+msgid "Composed Price"
+msgstr "Precio compuesto"
+
+#. module: analytic_quotation
+#: view:analytic.quotation.item:analytic_quotation.view_analytic_quotation_item_form
+#: field:analytic.quotation.item,concept_ids:0
+msgid "Concepts"
+msgstr "Conceptos"
+
+#. module: analytic_quotation
+#: view:account.analytic.account:analytic_quotation.analytic_attendees_quotation_form_view
+#: view:create.invoice:analytic_quotation.view_create_invoice
+#: model:ir.actions.act_window,name:analytic_quotation.action_invoice_create
+#: model:ir.model,name:analytic_quotation.model_create_invoice
+msgid "Create Invoice"
+msgstr "Crear factura"
+
+#. module: analytic_quotation
+#: view:create.invoice:analytic_quotation.view_create_invoice
+msgid "Create invoice"
+msgstr "Crear factura"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,create_uid:0
+#: field:analytic.quotation.item.concept,create_uid:0
+#: field:create.invoice,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,create_date:0
+#: field:analytic.quotation.item.concept,create_date:0
+#: field:create.invoice,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: analytic_quotation
+#: view:account.analytic.account:analytic_quotation.analytic_attendees_quotation_form_view
+#: view:analytic.quotation.item:analytic_quotation.view_analytic_quotation_item_form
+#: field:analytic.quotation.item,name:0
+#: field:analytic.quotation.item.concept,name:0
+#: view:website:analytic_quotation.quotation_report
+msgid "Description"
+msgstr "Descripción"
+
+#. module: analytic_quotation
+#: view:website:analytic_quotation.quotation_report
+msgid "Description:"
+msgstr "Descripción"
+
+#. module: analytic_quotation
+#: selection:analytic.quotation.item,show_mode:0
+msgid "Detailed"
+msgstr "Detallado"
+
+#. module: analytic_quotation
+#: selection:analytic.quotation.item,show_mode:0
+msgid "Grouped"
+msgstr "Agrupado"
+
+#. module: analytic_quotation
+#: view:product.template:analytic_quotation.product_template_form_view
+msgid "HTLM description"
+msgstr "Descripción html"
+
+#. module: analytic_quotation
+#: field:account.analytic.account,html_description:0
+#: field:analytic.quotation.item,description:0
+#: field:analytic.quotation.item.concept,description:0
+#: field:product.template,html_description:0
+msgid "HTML Description"
+msgstr "Descripción html"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,id:0
+#: field:analytic.quotation.item.concept,id:0
+#: field:create.invoice,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/models/analytic_quotation.py:144
+#, python-format
+msgid "INV: %s"
+msgstr "INV: %s"
+
+#. module: analytic_quotation
+#: field:create.invoice,date:0
+msgid "Invoice Date"
+msgstr "Fecha a facturar"
+
+#. module: analytic_quotation
+#: selection:create.invoice,invoice_mode:0
+msgid "Invoice advance"
+msgstr "Facturar anticipo"
+
+#. module: analytic_quotation
+#: selection:create.invoice,invoice_mode:0
+msgid "Invoice percent"
+msgstr "Facturar porcentaje"
+
+#. module: analytic_quotation
+#: selection:create.invoice,invoice_mode:0
+msgid "Invoice rest"
+msgstr "Facturar el resto"
+
+#. module: analytic_quotation
+#: help:analytic.quotation.item,settled_price:0
+msgid "It is settled by the user"
+msgstr "Este precio es introducido por el usuario."
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,quotation_item_template_id:0
+msgid "Item Template"
+msgstr "Plantilla"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,write_uid:0
+#: field:analytic.quotation.item.concept,write_uid:0
+#: field:create.invoice,write_uid:0
+msgid "Last Updated by"
+msgstr "última modificación realizada por"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,write_date:0
+#: field:analytic.quotation.item.concept,write_date:0
+#: field:create.invoice,write_date:0
+msgid "Last Updated on"
+msgstr "última modificación realizada en"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,margin:0
+#: field:analytic.quotation.item.concept,margin:0
+msgid "Margin"
+msgstr "Margen"
+
+#. module: analytic_quotation
+#: field:create.invoice,percent:0
+msgid "Percent (%)"
+msgstr "Porciento (%)"
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/models/analytic.py:102
+#, python-format
+msgid "Please define sales journal for this company: %s."
+msgstr "Por favor, define un diario de venta para la compañía:"
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/wizard/action_create_invoice.py:115
+#, python-format
+msgid "Please, add quotation items"
+msgstr "Por favor, adiccione partidas del presupuesto."
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/wizard/action_create_invoice.py:54
+#, python-format
+msgid "Please, before create the advance invoice."
+msgstr "Por favor, debe facturar primero el anticipo."
+
+#. module: analytic_quotation
+#: view:website:analytic_quotation.quotation_report
+msgid "Price"
+msgstr "Precio"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item.concept,product_id:0
+msgid "Product"
+msgstr "Product"
+
+#. module: analytic_quotation
+#: model:product.template,name:analytic_quotation.product_event_product_template
+msgid "Product Event"
+msgstr "Producto Evento"
+
+#. module: analytic_quotation
+#: model:ir.model,name:analytic_quotation.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item.concept,quantity:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: analytic_quotation
+#: field:create.invoice,quotation_amount:0
+msgid "Quotation Amount"
+msgstr "Importe presupuestado"
+
+#. module: analytic_quotation
+#: view:analytic.quotation.item:analytic_quotation.view_analytic_quotation_item_form
+msgid "Quotation Item"
+msgstr "Partida del presupuesto"
+
+#. module: analytic_quotation
+#: view:account.analytic.account:analytic_quotation.analytic_attendees_quotation_form_view
+#: field:account.analytic.account,quotation_item_ids:0
+#: view:analytic.quotation.item:analytic_quotation.view_analytic_quotation_item_tree
+#: field:analytic.quotation.item.concept,quotation_item_id:0
+msgid "Quotation Items"
+msgstr "Partidas del presupuesto"
+
+#. module: analytic_quotation
+#: model:ir.actions.report.xml,name:analytic_quotation.crm_quotation_report
+msgid "Quotation Report"
+msgstr "Reporte del presupuesto"
+
+#. module: analytic_quotation
+#: view:website:analytic_quotation.quotation_report
+msgid "Quotation:"
+msgstr "Presupuesto:"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item.concept,recoverable:0
+msgid "Recoverable"
+msgstr "Cobrable"
+
+#. module: analytic_quotation
+#: selection:analytic.quotation.item,type:0
+msgid "Settled"
+msgstr "Fijo"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,settled_price:0
+msgid "Settled Price"
+msgstr "Precio fijo"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,show:0
+msgid "Show"
+msgstr "Mostrar"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,show_mode:0
+#: field:create.invoice,invoice_mode:0
+msgid "Show Mode"
+msgstr "Mostar como"
+
+#. module: analytic_quotation
+#: help:analytic.quotation.item,composed_price:0
+msgid "Sum of sale price concept"
+msgstr "Es la suma del precio de venta asociado al concepto."
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/wizard/action_create_invoice.py:58
+#, python-format
+msgid "The amount to invoice cannot be more than quotation amount."
+msgstr "El importe a facturar no puede ser mayor que el importe presupuestado."
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/wizard/action_create_invoice.py:73
+#, python-format
+msgid "The amount to invoice cannot be more than: \"%d\""
+msgstr "El importe a facturar no puede ser mayor que: "
+
+#. module: analytic_quotation
+#: code:addons/analytic_quotation/wizard/action_create_invoice.py:41
+#: code:addons/analytic_quotation/wizard/action_create_invoice.py:118
+#, python-format
+msgid "The amount total was be invoiced"
+msgstr "Ya ha sido facturado todo el importe."
+
+#. module: analytic_quotation
+#: field:account.analytic.account,total_price:0
+#: field:analytic.quotation.item.concept,price_total:0
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,price_cost_total:0
+msgid "Total Price Cost"
+msgstr "Precio de costo"
+
+#. module: analytic_quotation
+#: field:account.analytic.account,total_cost:0
+msgid "Total cost"
+msgstr "Costo total"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item,type:0
+msgid "Type"
+msgstr "Typo de precio"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item.concept,price_cost:0
+msgid "Unit Price Cost"
+msgstr "Precio de costo"
+
+#. module: analytic_quotation
+#: field:analytic.quotation.item.concept,price_sale_unit:0
+msgid "Unit Sale Price"
+msgstr "Precio de venta"
+

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+		<record id="analytic_attendees_quotation_form_view" model="ir.ui.view">
+			<field name="name">analytic.attendees.quotation.form.view</field>
+			<field name="model">account.analytic.account</field>
+			<field name="inherit_id" ref="analytic_attendees.analytic_attendees_form_view"/>
+			<field name="arch" type="xml">
+				<xpath expr="//div[@name='buttons']" position="inside">
+					<field name="id" invisible="1"/>
+                    <button name="%(action_invoice_create)d" string="Create Invoice"
+                            type="action" class="oe_highlight" groups="analytic_attendees.group_analytic_management"
+                            attrs="{'invisible': ['|','|',('id','=',False),('type','not in',['contract']),('total_price','=',0)]}"/>
+				</xpath>
+				<xpath expr="//field[@name='template_id']" position="replace">
+					<field name="template_id" domain="[('type','=','template')]" attrs="{'invisible': [('type','in',['view', 'normal','template'])]}" context="{'default_type' : 'template'}"/>
+				</xpath>
+					
+				<xpath expr="//page[@name='contract_page']" position="before">
+                    <page string="Quotation Items">
+                    	<group>
+                      		<field name="quotation_item_ids" nolabel="1"/>
+                     	</group>
+                     	<group name="total_price">
+			                <field name="total_price" class="oe_inline"/>
+						</group>
+                     	<group>
+	                    	<field name="total_item_price"/>
+	                    	<field name="total_cost" groups="analytic_attendees.group_analytic_cost"/>
+	                    </group>
+                     </page>
+                     <page string="Description">
+                     	<group>
+	                    	<field name="html_description" widget="html"
+          					class="oe_memo" editor_height="250px" nolabel="1"/>
+               			</group>
+                     </page>
+                </xpath>
+			</field>
+		</record>
+
+	</data>
+</openerp>

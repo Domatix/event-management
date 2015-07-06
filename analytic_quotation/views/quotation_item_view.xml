@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		
+		<record id="view_analytic_quotation_item_form" model="ir.ui.view">
+            <field name="name">analytic.quotation.item.form</field>
+            <field name="model">analytic.quotation.item</field>
+            <field name="arch" type="xml">
+                <form string="Quotation Item">
+                    <group>
+                    	<field name="id" invisible="1"/>
+                    	<field name="quotation_item_template_id"
+                    	domain="[('id', '!=', id)]"/>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="show"/>
+                        <field name="show_mode" attrs="{'invisible' : [('show', '=', False)]}"/>
+                    </group>
+                    <group>
+                    	<field name="type"/>
+                        <field name="composed_price"/>
+                        <field name="settled_price"
+                        attrs="{'invisible' : [('type', '!=', 'settled')]}"/>
+                        <field name="price_cost_total" groups="analytic_attendees.group_analytic_cost"/>
+                    	<field name="margin" groups="analytic_attendees.group_analytic_cost"/>
+                    </group>
+                    <notebook>
+                        <page string="Concepts">
+                            <group>
+			                    <field name="concept_ids" widget="one2many_list" nolabel="1">
+			                        <tree string="Concepts" editable="bottom">
+			                            <field name="product_id"/>
+			                            <field name="name"/>
+			                            <field name="description"/>
+										<field name="recoverable"/>
+			                            <field name="price_sale_unit"/>
+			                            <field name="price_cost" groups="analytic_attendees.group_analytic_cost"/>
+			                            <field name="margin" groups="analytic_attendees.group_analytic_cost"/>
+			                            <field name="quantity"/>
+			                            <field name="price_total"/>
+			                        </tree>
+			                    </field>
+		                 	</group>
+                        </page>
+                        <page string="Description">
+                            <group>
+			                    <field name="description" widget="html"
+            					class="oe_memo" editor_height="250px" nolabel="1"/>
+		                 	</group>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_analytic_quotation_item_tree" model="ir.ui.view">
+            <field name="name">analytic.quotation.item.tree</field>
+            <field name="model">analytic.quotation.item</field>
+            <field name="arch" type="xml">
+                <tree string="Quotation Items">
+                    <field name="name"/>
+                    <field name="composed_price"/>
+                    <field name="settled_price"/>
+                    <field name="price_cost_total" groups="analytic_attendees.group_analytic_cost"/>
+                    <field name="margin" groups="analytic_attendees.group_analytic_cost"/>
+                </tree>
+            </field>
+        </record>
+
+	</data>
+</openerp>

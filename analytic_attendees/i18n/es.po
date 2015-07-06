@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* analytic_attendees
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-eaa0f29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-04 22:36+0000\n"
+"PO-Revision-Date: 2015-07-04 22:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: analytic_attendees
+#: model:ir.actions.act_window,help:analytic_attendees.template_action_analytic_attendees
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                    Click here to create a template of contract.\n"
+"                </p><p>\n"
+"                    Templates are used to prefigure contract that \n"
+"                    can be selected by the salespeople to quickly configure the\n"
+"                    terms and conditions of the contract.\n"
+"                </p>\n"
+"            "
+msgstr ""
+
+#. module: analytic_attendees
+#: model:ir.actions.act_window,help:analytic_attendees.action_analytic_attendees
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                    Click to create a new contract.\n"
+"                </p><p>\n"
+"                    Use contracts to event management.\n"
+"                </p>\n"
+"            "
+msgstr ""
+
+#. module: analytic_attendees
+#: model:ir.model,name:analytic_attendees.model_account_analytic_account
+msgid "Analytic Account"
+msgstr ""
+
+#. module: analytic_attendees
+#: model:res.groups,name:analytic_attendees.group_analytic_cost
+msgid "Analytic Cost"
+msgstr "Habilitar campos de costo en el Contrato"
+
+#. module: analytic_attendees
+#: model:res.groups,name:analytic_attendees.group_analytic_management
+msgid "Analytic Management"
+msgstr "Gestor de contratos/Eventos"
+
+#. module: analytic_attendees
+#: field:account.analytic.account,attendees_qty:0
+msgid "Attendees's Qty"
+msgstr "Número de asistentes"
+
+#. module: analytic_attendees
+#: model:ir.actions.act_window,name:analytic_attendees.template_action_analytic_attendees
+#: model:ir.ui.menu,name:analytic_attendees.menu_template_action_analytic_attendees
+msgid "Contract Template"
+msgstr "Plantilla de contrato"
+
+#. module: analytic_attendees
+#: model:ir.actions.act_window,name:analytic_attendees.action_analytic_attendees
+#: model:ir.ui.menu,name:analytic_attendees.menu_action_analytic_attendees
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: analytic_attendees
+#: field:event.type,create_uid:0
+#: field:service.type,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: analytic_attendees
+#: field:event.type,create_date:0
+#: field:service.type,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: analytic_attendees
+#: field:event.type,name:0
+msgid "Event Type"
+msgstr "Tipo de evento"
+
+#. module: analytic_attendees
+#: field:event.type,id:0
+#: field:service.type,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: analytic_attendees
+#: field:event.type,write_uid:0
+#: field:service.type,write_uid:0
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: analytic_attendees
+#: field:event.type,write_date:0
+#: field:service.type,write_date:0
+msgid "Last Updated on"
+msgstr "Última actualización realizada en"
+
+#. module: analytic_attendees
+#: view:account.analytic.account:analytic_attendees.analytic_attendees_form_view
+msgid "Name"
+msgstr "Nombre del contrato"
+
+#. module: analytic_attendees
+#: field:account.analytic.account,planned_revenue:0
+msgid "Planned revenue"
+msgstr "Importe estimado"
+
+#. module: analytic_attendees
+#: field:account.analytic.account,price_by_attendee:0
+msgid "Price by Attendee"
+msgstr "Precio por persona"
+
+#. module: analytic_attendees
+#: field:service.type,name:0
+msgid "Service Type"
+msgstr "Tipo de servicio"
+
+#. module: analytic_attendees
+#: field:account.analytic.account,event_type:0
+msgid "Type of Event"
+msgstr "Tipo de evento"
+
+#. module: analytic_attendees
+#: field:account.analytic.account,service_type:0
+msgid "Type of Service"
+msgstr "Tipo de servicio"
+

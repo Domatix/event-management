@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		
+		<record id="view_analytic_quotation_item_form_inherit" model="ir.ui.view">
+            <field name="name">analytic.quotation.item.form.inherit</field>
+            <field name="model">analytic.quotation.item</field>
+            <field name="inherit_id" ref="analytic_quotation.view_analytic_quotation_item_form" />
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='name']" position="after">
+					<field name="by_attendee" />
+				</xpath>
+			</field>
+        </record>
+
+	</data>
+</openerp>

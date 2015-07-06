@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<report
+		    id="crm_quotation_report"
+		    model="account.analytic.account"
+		    string="Quotation Report"
+		    report_type="qweb-pdf"
+		    name="analytic_quotation.quotation_report"
+		    file="analytic_quotation.quotation_report"
+		    attachment_use="False"
+		    attachment=""
+		/>
+		
+		<template id="quotation_report">
+			<t t-call="report.html_container">
+		        <t t-call="report.external_layout">
+			        <div class="page">
+			        	<t t-foreach="docs" t-as="e">
+			        		<p><strong>Quotation:</strong> <span t-field="e.name"/></p>
+			        		<p><strong>Description:</strong> <span t-field="e.html_description"/></p>
+			                <table class="table table-condensed">
+				                <thead>
+				                    <tr>
+				                        <th>Description</th>
+				                        <th>Price</th>
+				                    </tr>
+				               	</thead>
+				               	<tbody class="sale_tbody">
+				                    <tr t-foreach="e.quotation_item_ids" t-as="item">
+				                        <td>
+				                           <span t-field="item.name"/>
+				                        </td>
+				                        <td>
+				                        	<p t-if="item.type == 'settled'"><span t-field="item.settled_price"/></p>
+				                        	<p t-if="item.type == 'composed'"><span t-field="item.composed_price"/></p>
+				                        </td>
+				                    </tr>
+				                </tbody>
+				            </table>
+				        </t>
+				    </div>
+			    </t>
+		    </t>
+		</template>
+    	
+    </data>
+</openerp>
